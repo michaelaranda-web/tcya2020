@@ -7,6 +7,11 @@
 body {
   font-family: "Lato", sans-serif; }
 
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 #main-content {
   max-width: 800px;
   margin: 0 auto;
@@ -14,6 +19,15 @@ body {
   @media (min-width: 800px) {
     #main-content {
       margin-top: 50px; } }
+  #main-content .section-title {
+    background-color: #4f809b;
+    border-top: 5px solid #cdcdcd;
+    border-bottom: 5px solid #cdcdcd;
+    margin: 0 -7px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 9px 0; }
   #main-content #header-section .top-header-section-container {
     padding: 10px; }
     #main-content #header-section .top-header-section-container .image-container {
@@ -52,5 +66,32 @@ body {
       @media (min-width: 450px) {
         #main-content #header-section #cta-section #countdown {
           font-size: 26px; } }
+  #main-content #schedule-section #schedule {
+    display: flex;
+    justify-content: center; }
+    #main-content #schedule-section #schedule ul {
+      list-style-type: none;
+      padding: 0; }
+      #main-content #schedule-section #schedule ul li {
+        line-height: 30px; }
+  #main-content #faq-section .faq-section-content {
+    padding: 10px; }
+  #main-content #bottom-section {
+    background: url("../images/tzu_shao_conference_header.jpg") center no-repeat;
+    background-size: cover;
+    height: 288px;
+    position: relative; }
+    #main-content #bottom-section .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%; }
+      #main-content #bottom-section .content span {
+        color: white;
+        font-weight: bold;
+        font-size: 6vw; }
+        @media (min-width: 450px) {
+          #main-content #bottom-section .content span {
+            font-size: 54px; } }
 
 /*# sourceMappingURL=index.css.map */

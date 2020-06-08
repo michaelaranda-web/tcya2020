@@ -25,12 +25,29 @@ body {
   font-family: "Lato", sans-serif;;
 }
 
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #main-content {
   max-width: 800px;
   margin: 0 auto;
   margin-top: 25px;
   
   @media (min-width: $tablet-min) { margin-top: 50px; }
+  
+  .section-title {
+    background-color: #4f809b;
+    border-top: 5px solid #cdcdcd;
+    border-bottom: 5px solid #cdcdcd;
+    margin: 0 -7px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 9px 0;
+  }
   
   #header-section {
     // background: url('../images/tzu_shao_conference_header.jpg') center no-repeat;
@@ -81,6 +98,50 @@ body {
         font-family: 'Anton', sans-serif;
         font-size: 6vw;
         text-align: center;
+      }
+    }
+  }
+  
+  #schedule-section {
+    #schedule {
+      display: flex;
+      justify-content: center;
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+    
+        li {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  
+  #faq-section {
+    .faq-section-content {
+      padding: 10px;
+    }
+  }
+  
+  #bottom-section {
+    background: url('../images/tzu_shao_conference_header.jpg') center no-repeat;
+    background-size: cover;
+    height: 288px;
+    position: relative;
+    
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      
+      span {
+        color: white;
+        font-weight: bold;
+        font-size: 6vw;
+        
+        @media (min-width: $mobile-max) { font-size: 54px; }
       }
     }
   }
