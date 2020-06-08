@@ -1,0 +1,14 @@
+{
+  "name": "tcya-2020",
+  "version": "1.0.0",
+  "description": "something",
+  "scripts": {
+    "css": "node-sass ./sass/index.scss -o css",
+    "css:watch": "npm run css && node-sass ./sass/index.scss -wo "
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

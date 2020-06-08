@@ -1,0 +1,87 @@
+$desktop-min: 1200px;
+$tablet-max: 1199px;
+$tablet-min: 800px;
+$mobile-max: 450px;
+
+/***
+  Mixins
+***/
+
+@mixin site-button {
+  background-color: #23a455;
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/***
+  Styles
+***/
+
+body {
+  font-family: "Lato", sans-serif;;
+}
+
+#main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 25px;
+  
+  @media (min-width: $tablet-min) { margin-top: 50px; }
+  
+  #header-section {
+    // background: url('../images/tzu_shao_conference_header.jpg') center no-repeat;
+    // background-size: cover;
+    
+    .top-header-section-container {
+      padding: 10px;
+      
+      .image-container {
+        padding-left: 10px;
+        text-align: center;
+        
+        #header-logo {
+          @media (max-width: $mobile-max) { width: 100px; }
+          
+          width: 130px;
+        }
+      }
+      
+      .content-container {
+        text-align: center;
+        margin: 20px 0;
+        
+        h1 {
+          margin: 5px 0;
+        }
+        
+        h2 {
+          margin: 10px 0;
+          color: #859db4;
+          font-size: 17px;
+        }
+      }
+    }
+    
+    #cta-section {
+      text-align: center;
+      margin: 20px 0;
+      
+      #registration-button {
+        @include site-button;
+      }
+      
+      #countdown {
+        @media (min-width: $mobile-max) { font-size: 26px; }
+        
+        padding: 20px 0;
+        font-family: 'Anton', sans-serif;
+        font-size: 6vw;
+        text-align: center;
+      }
+    }
+  }
+}
