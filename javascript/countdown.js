@@ -20,7 +20,7 @@ var x = setInterval(function() {
   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
+  // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "EXPIRED";
