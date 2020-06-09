@@ -1,6 +1,5 @@
-$desktop-min: 1200px;
-$tablet-max: 1199px;
-$tablet-min: 800px;
+$tablet-landscape-max: 1199px;
+$tablet-portrait-min: 800px;
 $mobile-max: 450px;
 
 /***
@@ -36,7 +35,7 @@ body {
   margin: 0 auto;
   margin-top: 25px;
   
-  @media (min-width: $tablet-min) { margin-top: 50px; }
+  @media (min-width: $tablet-portrait-min) { margin-top: 50px; }
   
   .section-title {
     background-color: #4f809b;
@@ -50,9 +49,6 @@ body {
   }
   
   #header-section {
-    // background: url('../images/tzu_shao_conference_header.jpg') center no-repeat;
-    // background-size: cover;
-    
     .top-header-section-container {
       padding: 10px;
       
@@ -73,12 +69,35 @@ body {
         
         h1 {
           margin: 5px 0;
+          font-size: 2.2em;
         }
         
-        h2 {
-          margin: 10px 0;
+        .subheader-section {
+          display: flex;
+          justify-content: center;
+          
+          @media (max-width: $tablet-portrait-min) { flex-direction: column; }
+          
+          margin: 15px 0;
           color: #859db4;
           font-size: 17px;
+          font-weight: bold;
+          
+          .online-edition {
+            color: #9fcde1;
+          }
+          
+          .dates {
+            
+          }
+          
+          .subheader-item {
+            padding: 0 5px;
+          }
+        }
+        
+        #slogan {
+          margin-top: 30px;
         }
       }
     }
