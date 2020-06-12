@@ -43,7 +43,7 @@ body {
       margin: 20px 0; }
       #main-content #header-section .top-header-section-container .content-container h1 {
         margin: 5px 0;
-        font-size: 2.2em; }
+        font-size: 2.2e; }
       #main-content #header-section .top-header-section-container .content-container .subheader-section {
         display: flex;
         justify-content: center;
@@ -89,11 +89,15 @@ body {
         line-height: 30px; }
   #main-content #faq-section .faq-section-content {
     padding: 10px; }
+    #main-content #faq-section .faq-section-content #accordion {
+      width: 100%;
+      max-width: 500px; }
   #main-content #bottom-section {
     background: url("../images/tzu_shao_conference_header.jpg") center no-repeat;
     background-size: cover;
     height: 288px;
-    position: relative; }
+    position: relative;
+    margin-top: 30px; }
     #main-content #bottom-section .content {
       display: flex;
       align-items: center;
@@ -106,5 +110,23 @@ body {
         @media (min-width: 450px) {
           #main-content #bottom-section .content span {
             font-size: 54px; } }
+
+.ui-accordion-header {
+  outline: none; }
+
+.ui-widget-content {
+  border: none; }
+
+.ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-s {
+  background-image: url("https://code.jquery.com/ui/1.12.1/themes/base/images/ui-icons_444444_256x240.png");
+  margin-right: 5px; }
+
+.ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-e {
+  margin-right: 5px; }
+
+.ui-state-default {
+  border: none;
+  background: none;
+  color: #0096D6; }
 
 /*# sourceMappingURL=index.css.map */
