@@ -21,7 +21,7 @@ $mobile-max: 450px;
 ***/
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Barlow";
 }
 
 .flex-centered {
@@ -39,8 +39,6 @@ body {
   
   .section-title {
     background-color: #4f809b;
-    border-top: 5px solid #cdcdcd;
-    border-bottom: 5px solid #cdcdcd;
     margin: 0 -7px;
     color: white;
     font-size: 18px;
@@ -174,6 +172,7 @@ body {
 
 .ui-accordion-header {
   outline: none;  
+  font-family: "Barlow";
 }
 
 .ui-widget-content {
@@ -187,6 +186,10 @@ body {
 
 .ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-e {
   margin-right: 5px;
+}
+
+.ui-widget-content a {
+  color: #0096D6;
 }
 
 .ui-state-default {

@@ -5,7 +5,7 @@
   Styles
 ***/
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: "Barlow"; }
 
 .flex-centered {
   display: flex;
@@ -21,8 +21,6 @@ body {
       margin-top: 50px; } }
   #main-content .section-title {
     background-color: #4f809b;
-    border-top: 5px solid #cdcdcd;
-    border-bottom: 5px solid #cdcdcd;
     margin: 0 -7px;
     color: white;
     font-size: 18px;
@@ -112,7 +110,8 @@ body {
             font-size: 54px; } }
 
 .ui-accordion-header {
-  outline: none; }
+  outline: none;
+  font-family: "Barlow"; }
 
 .ui-widget-content {
   border: none; }
@@ -123,6 +122,9 @@ body {
 
 .ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-e {
   margin-right: 5px; }
+
+.ui-widget-content a {
+  color: #0096D6; }
 
 .ui-state-default {
   border: none;
