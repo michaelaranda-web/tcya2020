@@ -57,7 +57,8 @@ body {
         #main-content #header-section .top-header-section-container .content-container .subheader-section .subheader-item {
           padding: 0 5px; }
       #main-content #header-section .top-header-section-container .content-container #slogan {
-        margin-top: 30px; }
+        margin-top: 30px;
+        color: #cd9c4f; }
   #main-content #header-section #cta-section {
     text-align: center;
     margin: 20px 0; }
