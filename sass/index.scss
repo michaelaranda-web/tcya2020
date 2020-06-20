@@ -51,6 +51,8 @@ body {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
+    background-color: #f4fffe;
+    z-index: 0;
     
     .top-header-section-container {
       padding: 10px;
@@ -178,10 +180,12 @@ body {
         margin: auto;
         
         .event-info-selector {
+          position: relative;
           display: flex;
           flex-direction: column;
           align-items: center;
           opacity: 40%;
+          cursor: pointer;
           
           .event-info-selector-icon {
             max-width: 40px;
@@ -189,6 +193,7 @@ body {
           
           &.selected {
             opacity: 100%;
+            font-weight: bold;
           }
         }
       }

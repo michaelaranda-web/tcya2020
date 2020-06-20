@@ -29,7 +29,9 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden; }
+    overflow: hidden;
+    background-color: #f4fffe;
+    z-index: 0; }
     #main-content #header-section .top-header-section-container {
       padding: 10px; }
       #main-content #header-section .top-header-section-container .image-container {
@@ -127,14 +129,17 @@ body {
         max-width: 350px;
         margin: auto; }
         #main-content #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector {
+          position: relative;
           display: flex;
           flex-direction: column;
           align-items: center;
-          opacity: 40%; }
+          opacity: 40%;
+          cursor: pointer; }
           #main-content #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector .event-info-selector-icon {
             max-width: 40px; }
           #main-content #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector.selected {
-            opacity: 100%; }
+            opacity: 100%;
+            font-weight: bold; }
       #main-content #event-info-and-heart-section-container #event-info-section #general-info-section {
         padding: 25px 0px; }
         #main-content #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content {
