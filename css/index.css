@@ -64,7 +64,7 @@ body {
           margin-top: 30px;
           color: #cd9c4f; }
       #main-content #header-section .top-header-section-container .bamboo-image {
-        opacity: 0.12;
+        opacity: 0.07;
         position: absolute;
         height: 111%;
         bottom: -14px;
@@ -101,14 +101,29 @@ body {
         @media (min-width: 450px) {
           #main-content #header-section #cta-section #countdown {
             font-size: 26px; } }
-  #main-content #schedule-section #schedule {
-    display: flex;
-    justify-content: center; }
-    #main-content #schedule-section #schedule ul {
-      list-style-type: none;
-      padding: 0; }
-      #main-content #schedule-section #schedule ul li {
-        line-height: 30px; }
+  #main-content #event-info-section {
+    padding: 10px 0; }
+    #main-content #event-info-section #event-info-selectors-container {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 25px 0;
+      max-width: 450px;
+      margin: auto; }
+      #main-content #event-info-section #event-info-selectors-container .event-info-selector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 55%; }
+        #main-content #event-info-section #event-info-selectors-container .event-info-selector .event-info-selector-icon {
+          max-width: 40px; }
+        #main-content #event-info-section #event-info-selectors-container .event-info-selector.selected {
+          opacity: 100%; }
+    #main-content #event-info-section #general-info-section {
+      padding: 25px 0px; }
+      #main-content #event-info-section #general-info-section #general-info-section-content {
+        text-align: center; }
+    #main-content #event-info-section #schedule-section #schedule-section-content {
+      text-align: center; }
   #main-content #faq-section .faq-section-content {
     padding: 10px; }
     #main-content #faq-section .faq-section-content #accordion {
@@ -132,6 +147,14 @@ body {
         @media (min-width: 450px) {
           #main-content #bottom-section .content span {
             font-size: 54px; } }
+  #main-content .divider-section {
+    text-align: center;
+    padding: 40px 0; }
+    #main-content .divider-section .divider-section-icon {
+      max-width: 100px; }
+      @media (min-width: 800px) {
+        #main-content .divider-section .divider-section-icon {
+          max-width: 150px; } }
 
 .ui-accordion-header {
   outline: none;

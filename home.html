@@ -48,16 +48,46 @@
       </div>
     </div>
 
-    <div class="section-title">SCHEDULE</div>
+    <div class="section-title">EVENT INFO</div>
     
-    <div id="schedule-section">
-      <div id="schedule">
-        <ul>
-          <li>Saturday 10:00am - 6:00pm (PDT)</li>
-          <li>Sunday 9:30am - 6:30pm (PDT)</li>
-          <li>Monday 10:00am - 2:30pm (PDT)</li>
-        </ul>
+    <div id="event-info-section">
+      <div id="event-info-selectors-container">
+        <div class="event-info-selector selected">
+          <img id="general-info-button" class="event-info-selector-icon" src="./images/general_info.svg" />
+          <span class="event-info-selector-label">General</span>
+        </div>
+        <div class="event-info-selector">
+          <img id="schedule-button" class="event-info-selector-icon" src="./images/calendar.svg" />
+          <span class="event-info-selector-label">Schedule</span>
+        </div>
+      </div>      
+      
+      <div id="general-info-section">
+        <div id="general-info-section-content">
+          <div><b>Theme</b></div>
+          <div>Mission of Medicine</div>
+          <br />
+          <div><b>Conference slogan</b></div>
+          <div>Strength in Unity, Together as Community</div>
+        </div>
       </div>
+      
+      <div id="schedule-section">
+        <div id="schedule-section-content">
+          <div><b>Saturday</b></div>
+          <div>10:00am - 6:00pm (PDT)</div>
+          <br />
+          <div><b>Sunday</b></div>
+          <div>9:30am - 6:30pm (PDT)</div>
+          <br />
+          <div><b>Monday</b></div>
+          <div>10:00am - 2:30pm (PDT)</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="divider-section">
+      <img class="divider-section-icon" src="./images/heart_main.png" />
     </div>
     
     <div class="section-title">FAQ's</div>
@@ -128,6 +158,7 @@
     } );
   </script>
   <script src="./javascript/countdown.js"></script>
+  <script src="./javascript/event_info_selector.js"></script>
 </body>
 
 </html>

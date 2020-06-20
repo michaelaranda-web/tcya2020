@@ -107,7 +107,7 @@ body {
       
       .bamboo-image {
         @media (min-width: $mobile-max) { opacity: 0.09; }
-        opacity: 0.12;
+        opacity: 0.07;
         
         position: absolute;
         height: 111%;
@@ -147,18 +147,43 @@ body {
     }
   }
   
-  #schedule-section {
-    #schedule {
-      display: flex;
-      justify-content: center;
-      
-      ul {
-        list-style-type: none;
-        padding: 0;
+  #event-info-section {
+    padding: 10px 0;
     
-        li {
-          line-height: 30px;
+    #event-info-selectors-container {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 25px 0;
+      max-width: 450px;
+      margin: auto;
+      
+      .event-info-selector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 55%;
+        
+        .event-info-selector-icon {
+          max-width: 40px;
         }
+        
+        &.selected {
+          opacity: 100%;
+        }
+      }
+    }
+    
+    #general-info-section {
+      padding: 25px 0px;
+    
+      #general-info-section-content {
+        text-align: center;
+      }
+    }
+    
+    #schedule-section {
+      #schedule-section-content {
+        text-align: center;
       }
     }
   }
@@ -194,6 +219,16 @@ body {
         
         @media (min-width: $mobile-max) { font-size: 54px; }
       }
+    }
+  }
+  
+  .divider-section {
+    text-align: center;
+    padding: 40px 0;
+    
+    .divider-section-icon {
+      @media (min-width: $tablet-portrait-min) { max-width: 150px; }
+      max-width: 100px;
     }
   }
 }
