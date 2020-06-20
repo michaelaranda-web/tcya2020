@@ -135,10 +135,13 @@ body {
           position: relative;
           display: flex;
           flex-direction: column;
+          flex: 1;
           align-items: center;
           opacity: 0.4;
           cursor: pointer;
-          padding-bottom: 5px; }
+          margin: 0 5px;
+          padding-bottom: 5px;
+          border-bottom: 5px solid #eaeaea; }
           @supports (-ms-ime-align: auto) {
             #main-content #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector {
               padding: 0 10px; } }
