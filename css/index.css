@@ -13,12 +13,8 @@ body {
   align-items: center; }
 
 #main-content {
-  max-width: 800px;
-  margin: 0 auto;
-  margin-top: 25px; }
-  @media (min-width: 800px) {
-    #main-content {
-      margin-top: 50px; } }
+  max-width: 1200px;
+  margin: 0 auto; }
   #main-content .section-title {
     background-color: #4f809b;
     margin: 0 -7px;
@@ -26,58 +22,85 @@ body {
     font-size: 18px;
     text-align: center;
     padding: 9px 0; }
-  #main-content #header-section .top-header-section-container {
-    padding: 10px; }
-    #main-content #header-section .top-header-section-container .image-container {
-      padding-left: 10px;
-      text-align: center; }
-      #main-content #header-section .top-header-section-container .image-container #header-logo {
-        width: 130px; }
-        @media (max-width: 450px) {
-          #main-content #header-section .top-header-section-container .image-container #header-logo {
-            width: 100px; } }
-    #main-content #header-section .top-header-section-container .content-container {
+  #main-content #header-section {
+    position: relative;
+    padding: 10px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    #main-content #header-section .top-header-section-container {
+      padding: 10px; }
+      #main-content #header-section .top-header-section-container .image-container {
+        padding-left: 10px;
+        text-align: center; }
+        #main-content #header-section .top-header-section-container .image-container #header-logo {
+          width: 130px; }
+          @media (max-width: 450px) {
+            #main-content #header-section .top-header-section-container .image-container #header-logo {
+              width: 100px; } }
+      #main-content #header-section .top-header-section-container .content-container {
+        text-align: center;
+        margin: 20px 0; }
+        #main-content #header-section .top-header-section-container .content-container h1 {
+          margin: 5px 0;
+          font-size: 2.2e; }
+        #main-content #header-section .top-header-section-container .content-container .subheader-section {
+          display: flex;
+          justify-content: center;
+          margin: 15px 0;
+          color: #859db4;
+          font-size: 17px;
+          font-weight: bold; }
+          @media (max-width: 800px) {
+            #main-content #header-section .top-header-section-container .content-container .subheader-section {
+              flex-direction: column; } }
+          #main-content #header-section .top-header-section-container .content-container .subheader-section .online-edition {
+            color: #9fcde1; }
+          #main-content #header-section .top-header-section-container .content-container .subheader-section .subheader-item {
+            padding: 0 5px; }
+        #main-content #header-section .top-header-section-container .content-container #slogan {
+          display: none;
+          margin-top: 30px;
+          color: #cd9c4f; }
+      #main-content #header-section .top-header-section-container .bamboo-image {
+        opacity: 0.12;
+        position: absolute;
+        height: 111%;
+        bottom: -14px;
+        left: -29px; }
+        @media (min-width: 450px) {
+          #main-content #header-section .top-header-section-container .bamboo-image {
+            opacity: 0.09; } }
+      #main-content #header-section .top-header-section-container .bamboo-single-image {
+        opacity: 0.05;
+        position: absolute;
+        right: -100;
+        height: 110%;
+        top: -15px; }
+        @media (min-width: 450px) {
+          #main-content #header-section .top-header-section-container .bamboo-single-image {
+            opacity: 0.08; } }
+    #main-content #header-section #cta-section {
       text-align: center;
       margin: 20px 0; }
-      #main-content #header-section .top-header-section-container .content-container h1 {
-        margin: 5px 0;
-        font-size: 2.2e; }
-      #main-content #header-section .top-header-section-container .content-container .subheader-section {
-        display: flex;
-        justify-content: center;
-        margin: 15px 0;
-        color: #859db4;
-        font-size: 17px;
-        font-weight: bold; }
-        @media (max-width: 800px) {
-          #main-content #header-section .top-header-section-container .content-container .subheader-section {
-            flex-direction: column; } }
-        #main-content #header-section .top-header-section-container .content-container .subheader-section .online-edition {
-          color: #9fcde1; }
-        #main-content #header-section .top-header-section-container .content-container .subheader-section .subheader-item {
-          padding: 0 5px; }
-      #main-content #header-section .top-header-section-container .content-container #slogan {
-        margin-top: 30px;
-        color: #cd9c4f; }
-  #main-content #header-section #cta-section {
-    text-align: center;
-    margin: 20px 0; }
-    #main-content #header-section #cta-section #registration-button {
-      background-color: #23a455;
-      color: white;
-      padding: 15px 35px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      text-decoration: none; }
-    #main-content #header-section #cta-section #countdown {
-      padding: 20px 0;
-      font-family: 'Anton', sans-serif;
-      font-size: 6vw;
-      text-align: center; }
-      @media (min-width: 450px) {
-        #main-content #header-section #cta-section #countdown {
-          font-size: 26px; } }
+      #main-content #header-section #cta-section #registration-button {
+        background-color: #23a455;
+        color: white;
+        padding: 15px 35px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        text-decoration: none; }
+      #main-content #header-section #cta-section #countdown {
+        display: none;
+        padding: 20px 0;
+        font-family: 'Anton', sans-serif;
+        font-size: 6vw;
+        text-align: center; }
+        @media (min-width: 450px) {
+          #main-content #header-section #cta-section #countdown {
+            font-size: 26px; } }
   #main-content #schedule-section #schedule {
     display: flex;
     justify-content: center; }
