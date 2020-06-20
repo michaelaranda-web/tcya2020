@@ -45,11 +45,12 @@ body {
   
   #header-section {
     position: relative;
-    padding: 10px;
+    margin: 10px;
     min-height: 350px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
     
     .top-header-section-container {
       padding: 10px;

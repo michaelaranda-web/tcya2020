@@ -24,11 +24,12 @@ body {
     padding: 9px 0; }
   #main-content #header-section {
     position: relative;
-    padding: 10px;
+    margin: 10px;
     min-height: 350px;
     display: flex;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    overflow: hidden; }
     #main-content #header-section .top-header-section-container {
       padding: 10px; }
       #main-content #header-section .top-header-section-container .image-container {
