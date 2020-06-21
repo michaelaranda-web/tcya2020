@@ -122,7 +122,9 @@ body {
       @media (min-width: 800px) {
         #main-content #event-info-and-heart-section-container #event-info-section {
           width: 50%;
-          min-height: 350px; } }
+          min-height: 350px;
+          max-width: 350px;
+          padding: 10px 35px; } }
       #main-content #event-info-and-heart-section-container #event-info-section #event-info-selectors-container {
         display: flex;
         justify-content: space-evenly;
@@ -155,7 +157,12 @@ body {
       #main-content #event-info-and-heart-section-container #event-info-section #general-info-section {
         padding: 25px 0px; }
         #main-content #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content {
-          text-align: center; }
+          text-align: left; }
+          @media (max-width: 450px) {
+            #main-content #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content {
+              padding: 0 25px; } }
+          #main-content #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content .label {
+            color: #8fc0d1; }
       #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content {
         text-align: center; }
         #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item {

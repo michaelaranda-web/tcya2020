@@ -173,6 +173,8 @@ body {
       @media (min-width: $tablet-portrait-min) { 
         width: 50%; 
         min-height: 350px;
+        max-width: 350px;
+        padding: 10px 35px;
       }
       
       #event-info-selectors-container {
@@ -218,7 +220,15 @@ body {
         padding: 25px 0px;
       
         #general-info-section-content {
-          text-align: center;
+          text-align: left;
+          
+          @media (max-width: $mobile-max) { 
+            padding: 0 25px;
+          }
+          
+          .label {
+            color: #8fc0d1;
+          }
         }
       }
       
