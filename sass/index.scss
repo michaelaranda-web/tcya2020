@@ -160,20 +160,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 900px;
     margin: auto;
     
+    @media (min-width: $mobile-max) {
+      max-width: 900px;
+    }
+    
     @media (min-width: $tablet-portrait-min) { 
-      flex-direction: row ;
+      flex-direction: row;
     }
     
     #event-info-section {
       padding: 10px 0;
+      max-width: 350px;
+      
+      @media (max-width: $tablet-portrait-min) { 
+        margin: auto;
+      }
       
       @media (min-width: $tablet-portrait-min) { 
         width: 50%; 
         min-height: 350px;
-        max-width: 350px;
         padding: 10px 35px;
       }
       
@@ -181,7 +188,6 @@ body {
         display: flex;
         justify-content: space-evenly;
         padding: 25px 0;
-        max-width: 350px;
         margin: auto;
         
         @supports (-ms-ime-align: auto) {
@@ -218,6 +224,10 @@ body {
       
       #general-info-section {
         padding: 25px 0px;
+        
+        @media (min-width: $mobile-max) {
+          max-width: 350px;
+        }
       
         #general-info-section-content {
           text-align: left;

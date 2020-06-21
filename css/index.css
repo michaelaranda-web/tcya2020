@@ -112,24 +112,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 900px;
     margin: auto; }
+    @media (min-width: 450px) {
+      #main-content #event-info-and-heart-section-container {
+        max-width: 900px; } }
     @media (min-width: 800px) {
       #main-content #event-info-and-heart-section-container {
         flex-direction: row; } }
     #main-content #event-info-and-heart-section-container #event-info-section {
-      padding: 10px 0; }
+      padding: 10px 0;
+      max-width: 350px; }
+      @media (max-width: 800px) {
+        #main-content #event-info-and-heart-section-container #event-info-section {
+          margin: auto; } }
       @media (min-width: 800px) {
         #main-content #event-info-and-heart-section-container #event-info-section {
           width: 50%;
           min-height: 350px;
-          max-width: 350px;
           padding: 10px 35px; } }
       #main-content #event-info-and-heart-section-container #event-info-section #event-info-selectors-container {
         display: flex;
         justify-content: space-evenly;
         padding: 25px 0;
-        max-width: 350px;
         margin: auto; }
         @supports (-ms-ime-align: auto) {
           #main-content #event-info-and-heart-section-container #event-info-section #event-info-selectors-container {
@@ -156,6 +160,9 @@ body {
             border-bottom: 5px solid #83c583; }
       #main-content #event-info-and-heart-section-container #event-info-section #general-info-section {
         padding: 25px 0px; }
+        @media (min-width: 450px) {
+          #main-content #event-info-and-heart-section-container #event-info-section #general-info-section {
+            max-width: 350px; } }
         #main-content #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content {
           text-align: left; }
           @media (max-width: 450px) {
