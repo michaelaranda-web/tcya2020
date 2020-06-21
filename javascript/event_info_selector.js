@@ -1,10 +1,13 @@
 function EventInfoSelector() {
   this.selectedSection = "general";
+  this.updating = false;
   
   this.showSection = function (sectionName) {
-    if (sectionName == this.selectedSection) {
+    if (sectionName == this.selectedSection || this.updating) {
       return;
     }
+    
+    this.updating = true;
     
     if (sectionName === "general") {
       this.selectedSection = "general";
@@ -13,7 +16,7 @@ function EventInfoSelector() {
       $( "#general-info-button" ).addClass("selected");
       
       $( "#schedule-section" ).hide();
-      $( "#general-info-section" ).show( 'drop', {}, 500 );
+      $( "#general-info-section" ).show( 'drop', {}, 500, function() { this.updating = false; }.bind(this) );
     } else {
       this.selectedSection = "schedule";
       
@@ -21,7 +24,7 @@ function EventInfoSelector() {
       $( "#schedule-button" ).addClass("selected");
       
       $( "#general-info-section" ).hide();
-      $( "#schedule-section" ).show( 'drop', {}, 500 );
+      $( "#schedule-section" ).show( 'drop', {}, 500, function() { this.updating = false; }.bind(this) );
     }
   }
 }

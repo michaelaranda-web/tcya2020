@@ -121,6 +121,7 @@ body {
         flex-direction: row; } }
     #main-content #event-info-and-heart-section-container #event-info-section {
       padding: 10px 0;
+      width: 100%;
       max-width: 350px; }
       @media (max-width: 800px) {
         #main-content #event-info-and-heart-section-container #event-info-section {
