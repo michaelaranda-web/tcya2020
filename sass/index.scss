@@ -260,8 +260,6 @@ body {
             
             .calendar-icon-container {
               position: relative;
-              display: flex;
-              justify-content: center;
               padding: 0 10px;
               
               img {
@@ -272,16 +270,18 @@ body {
               .day, .number {
                 position: absolute;
                 font-weight: bold;
+                height: 50px;
+                width: 50px;
               }
               
               .day {
                 font-size: 12px;
-                bottom: 20px;
+                bottom: -15px;
               }
               
               .number {
                 font-size: 18px;
-                bottom: 2px;
+                bottom: -25px;
                 color: #7e7f78;
               }
             }

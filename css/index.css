@@ -184,21 +184,21 @@ body {
               justify-content: center; } }
           #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container {
             position: relative;
-            display: flex;
-            justify-content: center;
             padding: 0 10px; }
             #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container img {
               height: 50px;
               width: 50px; }
             #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day, #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
               position: absolute;
-              font-weight: bold; }
+              font-weight: bold;
+              height: 50px;
+              width: 50px; }
             #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day {
               font-size: 12px;
-              bottom: 20px; }
+              bottom: -15px; }
             #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
               font-size: 18px;
-              bottom: 2px;
+              bottom: -25px;
               color: #7e7f78; }
     #main-content #event-info-and-heart-section-container #heart-section {
       text-align: center;
