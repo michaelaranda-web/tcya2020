@@ -121,7 +121,8 @@ body {
       padding: 10px 0; }
       @media (min-width: 800px) {
         #main-content #event-info-and-heart-section-container #event-info-section {
-          width: 50%; } }
+          width: 50%;
+          min-height: 350px; } }
       #main-content #event-info-and-heart-section-container #event-info-section #event-info-selectors-container {
         display: flex;
         justify-content: space-evenly;
@@ -157,6 +158,28 @@ body {
           text-align: center; }
       #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content {
         text-align: center; }
+        #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 0 10px; }
+            #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container img {
+              height: 50px;
+              width: 50px; }
+            #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day, #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
+              position: absolute;
+              font-weight: bold; }
+            #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day {
+              font-size: 12px;
+              bottom: 20px; }
+            #main-content #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
+              font-size: 18px;
+              bottom: 2px;
+              color: #7e7f78; }
     #main-content #event-info-and-heart-section-container #heart-section {
       text-align: center;
       padding: 40px 0; }
