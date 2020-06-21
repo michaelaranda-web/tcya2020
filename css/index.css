@@ -229,6 +229,11 @@ body {
         @media (min-width: 450px) {
           #main-content #bottom-section .content span {
             font-size: 54px; } }
+    #main-content #bottom-section #flaticon-attribution {
+      font-size: 12px;
+      text-align: right;
+      padding: 20px 0;
+      opacity: 0.6; }
 
 .ui-accordion-header {
   outline: none;
