@@ -307,10 +307,8 @@ body {
   }
   
   #faq-section {
-    background-color: #fff7df;
-    
     .faq-section-content {
-      @media (min-width: $tablet-portrait-min) { padding: 30px 0; }
+      @media (min-width: $tablet-portrait-min) { padding: 30px 0 45px; }
       padding: 0 0 30px;
       
       width: 100%;
@@ -327,13 +325,10 @@ body {
         }
         
         .ui-accordion-header {
-          @media (max-width: $tablet-portrait-min) {
-            margin: 15px 0 0 0;
-            border: 2px solid #b5dcb5;
-            border-radius: 3px;
-            background: #fcfffc;
-            color: #133649;
-          }
+          margin: 15px 0 0 0;
+          border: 2px solid #b5dcb5;
+          border-radius: 3px;
+          color: #133649;
         }
       }
     }
