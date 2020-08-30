@@ -30,7 +30,133 @@ body {
   align-items: center;
 }
 
-#main-content {
+#main-content .navbar {
+  background-color: #4f809b !important;
+  
+  .navbar-brand {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: white;
+  }
+}
+
+#header-section {
+  position: relative;
+  margin: 10px;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f4fffe;
+  z-index: 0;
+  
+  .top-header-section-container {
+    padding: 10px;
+    
+    .image-container {
+      padding-left: 10px;
+      text-align: center;
+      
+      #header-logo {
+        @media (max-width: $mobile-max) { width: 100px; }
+        
+        width: 130px;
+      }
+    }
+    
+    .content-container {
+      text-align: center;
+      margin: 20px 0;
+      
+      h1 {
+        margin: 5px 0;
+        font-size: 2.2e;
+      }
+      
+      .subheader-section {
+        display: flex;
+        justify-content: center;
+        
+        @media (max-width: $tablet-portrait-min) { flex-direction: column; }
+        
+        margin: 15px 0;
+        color: #859db4;
+        font-size: 17px;
+        font-weight: bold;
+        
+        .online-edition {
+          color: #deb653;
+        }
+        
+        .dates {
+          
+        }
+        
+        .subheader-item {
+          padding: 0 5px;
+        }
+      }
+      
+      #slogan {
+        display: none;
+        margin-top: 30px;
+        color: #cd9c4f;
+      }
+    }
+    
+    .bamboo-image {
+      opacity: 0.23;
+      position: absolute;
+      height: 111%;
+      bottom: -32px;
+      
+      @media (min-width: $mobile-max) { left: -23px; }
+      left: -223px;
+      
+      z-index: -999;
+      transform: rotate(-6deg);
+    }
+    
+    .bamboo-single-image {
+      opacity: 0.2;
+      position: absolute;
+      
+      @media (min-width: $mobile-max) { right: -88px; }
+      right: -125px;
+      
+      height: 110%;
+      top: -15px;
+      z-index: -999;
+      transform: rotate(2deg);
+    }
+  }
+  
+  #cta-section {
+    text-align: center;
+    margin: 20px 0;
+    
+    #registration-button {
+      @include site-button;
+    }
+    
+    #countdown {
+      display: none;
+      
+      @media (min-width: $mobile-max) { font-size: 26px; }
+      
+      padding: 20px 0;
+      font-family: 'Anton', sans-serif;
+      font-size: 6vw;
+      text-align: center;
+    }
+  }
+}
+
+#main-content.home-page {
   max-width: 1200px;
   margin: 0 auto;
   
@@ -43,132 +169,6 @@ body {
     
     text-align: center;
     padding: 9px 0;
-  }
-  
-  .navbar {
-    background-color: #4f809b !important;
-    
-    .navbar-brand {
-      color: white;
-      font-weight: bold;
-    }
-    
-    .navbar-nav .nav-item .nav-link {
-      color: white;
-    }
-  }
-  
-  #header-section {
-    position: relative;
-    margin: 10px;
-    min-height: 350px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: #f4fffe;
-    z-index: 0;
-    
-    .top-header-section-container {
-      padding: 10px;
-      
-      .image-container {
-        padding-left: 10px;
-        text-align: center;
-        
-        #header-logo {
-          @media (max-width: $mobile-max) { width: 100px; }
-          
-          width: 130px;
-        }
-      }
-      
-      .content-container {
-        text-align: center;
-        margin: 20px 0;
-        
-        h1 {
-          margin: 5px 0;
-          font-size: 2.2e;
-        }
-        
-        .subheader-section {
-          display: flex;
-          justify-content: center;
-          
-          @media (max-width: $tablet-portrait-min) { flex-direction: column; }
-          
-          margin: 15px 0;
-          color: #859db4;
-          font-size: 17px;
-          font-weight: bold;
-          
-          .online-edition {
-            color: #deb653;
-          }
-          
-          .dates {
-            
-          }
-          
-          .subheader-item {
-            padding: 0 5px;
-          }
-        }
-        
-        #slogan {
-          display: none;
-          margin-top: 30px;
-          color: #cd9c4f;
-        }
-      }
-      
-      .bamboo-image {
-        opacity: 0.23;
-        position: absolute;
-        height: 111%;
-        bottom: -32px;
-        
-        @media (min-width: $mobile-max) { left: -23px; }
-        left: -223px;
-        
-        z-index: -999;
-        transform: rotate(-6deg);
-      }
-      
-      .bamboo-single-image {
-        opacity: 0.2;
-        position: absolute;
-        
-        @media (min-width: $mobile-max) { right: -88px; }
-        right: -125px;
-        
-        height: 110%;
-        top: -15px;
-        z-index: -999;
-        transform: rotate(2deg);
-      }
-    }
-    
-    #cta-section {
-      text-align: center;
-      margin: 20px 0;
-      
-      #registration-button {
-        @include site-button;
-      }
-      
-      #countdown {
-        display: none;
-        
-        @media (min-width: $mobile-max) { font-size: 26px; }
-        
-        padding: 20px 0;
-        font-family: 'Anton', sans-serif;
-        font-size: 6vw;
-        text-align: center;
-      }
-    }
   }
   
   #event-info-and-heart-section-container {
@@ -405,3 +405,51 @@ body {
   color: #0096D6;
 }
 
+/* Speakers Page */
+
+#main-content.speakers-page, #main-content.group-advisors-page {
+  #header-section {
+    min-height: 150px;
+    
+    .top-header-section-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: $tablet-portrait-min) { flex-direction: column; }
+      
+      .bamboo-image {
+        left: 15px;
+      }
+      
+      .bamboo-single-image {
+        right: -15px;
+      }
+      
+      .content-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        
+        h1 {
+          @media (max-width: $mobile-max) { font-size: 1.2rem; }
+          
+          font-size: 2rem;
+        }
+        
+        #slogan {
+          @media (max-width: $mobile-max) { font-size: 13px; }
+          
+          display: block;
+          font-weight: bold;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  
+  #speakers-section {
+    text-align: center;
+    color: #4f809b;
+    margin: 25px 0;
+  }
+}
