@@ -45,6 +45,42 @@ body {
     .navbar-nav .nav-item .nav-link {
       color: white;
     }
+    
+    .navbar-toggler {
+      .navbar-toggler-icon {
+        background-image: url("../images/menu.svg");
+      }
+    }
+  }
+  
+  .calendar-icon-container {
+    position: relative;
+    padding: 0 10px;
+    
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    
+    .day, .number {
+      position: absolute;
+      font-weight: bold;
+      height: 50px;
+      width: 50px;
+    }
+    
+    .day {
+      font-size: 12px;
+      bottom: -15px;
+      text-align: center;
+    }
+    
+    .number {
+      font-size: 18px;
+      bottom: -25px;
+      color: #7e7f78;
+      text-align: center;
+    }
   }
 }
 
@@ -272,34 +308,6 @@ body {
             @supports (-ms-ime-align: auto) {
               justify-content: center; //for Edge
             }
-            
-            .calendar-icon-container {
-              position: relative;
-              padding: 0 10px;
-              
-              img {
-                height: 50px;
-                width: 50px;
-              }
-              
-              .day, .number {
-                position: absolute;
-                font-weight: bold;
-                height: 50px;
-                width: 50px;
-              }
-              
-              .day {
-                font-size: 12px;
-                bottom: -15px;
-              }
-              
-              .number {
-                font-size: 18px;
-                bottom: -25px;
-                color: #7e7f78;
-              }
-            }
           }
         }
       }
@@ -407,9 +415,20 @@ body {
   color: #0096D6;
 }
 
-/* Speakers Page */
+/* Non-Home Pages */
 
-#main-content.speakers-page, #main-content.group-advisors-page {
+#speakers-section, #group-advisors-section, #schedule-section {
+  h1 {
+    text-align: center;
+    color: #4f809b;
+    margin: 35px 0;      
+    font-size: 2rem;
+  }
+}
+
+/* Speakers and Group Advisors Page */
+
+#main-content.speakers-page, #main-content.group-advisors-page, #main-content.schedule-page {
   #header-section {
     min-height: 150px;
     
@@ -449,14 +468,7 @@ body {
     }
   }
   
-  #speakers-section, #group-advisors-section, #schedule-section {
-    h1 {
-      text-align: center;
-      color: #4f809b;
-      margin: 25px 0;      
-      font-size: 2rem;
-    }
-    
+  #speakers-section, #group-advisors-section {
     ul.people-list {
       margin: 0;
       padding: 0;
@@ -561,6 +573,96 @@ body {
               font-weight: bold;
               font-size: 16px;
               color: #59af59;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#main-content.schedule-page {
+  #schedule-section {
+    #schedule-container {
+      display: flex;
+      justify-content: space-evenly;
+      
+      @media (max-width: 800px) { 
+        flex-direction: column; 
+        align-items: center;
+      }
+      
+      .schedule-day-list-container {
+        width: 300px;
+        
+        .day-header {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          
+          .calendar-icon-container {
+            img {
+              height: 75px;
+              width: 75px;
+            }
+            
+            .day, .number {
+              height: 75px;
+              width: 75px;
+            }
+            
+            .day {
+              font-size: 17px;
+              bottom: -25px;
+              text-align: center;
+            }
+            
+            .number {
+              font-size: 22px;
+              bottom: -40px;
+              color: #7e7f78;
+              text-align: center;
+            }
+          }
+          
+          .day-label {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #83c583;
+          }
+        }
+        
+        .schedule-day-list {
+          list-style: none;
+          
+          @media (min-width: 800px) { 
+            padding-left: 0;          
+            padding: 15px;
+            
+            &.middle {
+              background-color: #fffdef;
+            }
+          }
+          
+          .schedule-item {
+            padding: 13px 0;
+            
+            p {
+              margin-bottom: 5px;
+            }
+            
+            .schedule-item-title {
+              font-weight: bold;
+              color: #444141;
+              
+              &.break {
+                color: #6a9ead;
+              }
+            }
+            
+            .schedule-item-time {
+              
             }
           }
         }

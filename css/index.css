@@ -22,6 +22,28 @@ body {
       font-weight: bold; }
     #main-content .navbar .navbar-nav .nav-item .nav-link {
       color: white; }
+    #main-content .navbar .navbar-toggler .navbar-toggler-icon {
+      background-image: url("../images/menu.svg"); }
+  #main-content .calendar-icon-container {
+    position: relative;
+    padding: 0 10px; }
+    #main-content .calendar-icon-container img {
+      height: 50px;
+      width: 50px; }
+    #main-content .calendar-icon-container .day, #main-content .calendar-icon-container .number {
+      position: absolute;
+      font-weight: bold;
+      height: 50px;
+      width: 50px; }
+    #main-content .calendar-icon-container .day {
+      font-size: 12px;
+      bottom: -15px;
+      text-align: center; }
+    #main-content .calendar-icon-container .number {
+      font-size: 18px;
+      bottom: -25px;
+      color: #7e7f78;
+      text-align: center; }
 
 #header-section {
   position: relative;
@@ -192,24 +214,6 @@ body {
         @supports (-ms-ime-align: auto) {
           #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item {
             justify-content: center; } }
-        #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container {
-          position: relative;
-          padding: 0 10px; }
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container img {
-            height: 50px;
-            width: 50px; }
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day, #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
-            position: absolute;
-            font-weight: bold;
-            height: 50px;
-            width: 50px; }
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day {
-            font-size: 12px;
-            bottom: -15px; }
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
-            font-size: 18px;
-            bottom: -25px;
-            color: #7e7f78; }
   #main-content.home-page #event-info-and-heart-section-container #heart-section {
     text-align: center;
     padding: 40px 0; }
@@ -288,50 +292,51 @@ body {
   background: none;
   color: #0096D6; }
 
-/* Speakers Page */
-#main-content.speakers-page #header-section, #main-content.group-advisors-page #header-section {
+/* Non-Home Pages */
+#speakers-section h1, #group-advisors-section h1, #schedule-section h1 {
+  text-align: center;
+  color: #4f809b;
+  margin: 35px 0;
+  font-size: 2rem; }
+
+/* Speakers and Group Advisors Page */
+#main-content.speakers-page #header-section, #main-content.group-advisors-page #header-section, #main-content.schedule-page #header-section {
   min-height: 150px; }
-  #main-content.speakers-page #header-section .top-header-section-container, #main-content.group-advisors-page #header-section .top-header-section-container {
+  #main-content.speakers-page #header-section .top-header-section-container, #main-content.group-advisors-page #header-section .top-header-section-container, #main-content.schedule-page #header-section .top-header-section-container {
     display: flex;
     justify-content: center;
     align-items: center; }
     @media (max-width: 800px) {
-      #main-content.speakers-page #header-section .top-header-section-container, #main-content.group-advisors-page #header-section .top-header-section-container {
+      #main-content.speakers-page #header-section .top-header-section-container, #main-content.group-advisors-page #header-section .top-header-section-container, #main-content.schedule-page #header-section .top-header-section-container {
         flex-direction: column; } }
-    #main-content.speakers-page #header-section .top-header-section-container .bamboo-image, #main-content.group-advisors-page #header-section .top-header-section-container .bamboo-image {
+    #main-content.speakers-page #header-section .top-header-section-container .bamboo-image, #main-content.group-advisors-page #header-section .top-header-section-container .bamboo-image, #main-content.schedule-page #header-section .top-header-section-container .bamboo-image {
       left: 15px; }
-    #main-content.speakers-page #header-section .top-header-section-container .bamboo-single-image, #main-content.group-advisors-page #header-section .top-header-section-container .bamboo-single-image {
+    #main-content.speakers-page #header-section .top-header-section-container .bamboo-single-image, #main-content.group-advisors-page #header-section .top-header-section-container .bamboo-single-image, #main-content.schedule-page #header-section .top-header-section-container .bamboo-single-image {
       right: -15px; }
-    #main-content.speakers-page #header-section .top-header-section-container .content-container, #main-content.group-advisors-page #header-section .top-header-section-container .content-container {
+    #main-content.speakers-page #header-section .top-header-section-container .content-container, #main-content.group-advisors-page #header-section .top-header-section-container .content-container, #main-content.schedule-page #header-section .top-header-section-container .content-container {
       display: flex;
       flex-direction: column;
       padding-left: 10px; }
-      #main-content.speakers-page #header-section .top-header-section-container .content-container h1, #main-content.group-advisors-page #header-section .top-header-section-container .content-container h1 {
+      #main-content.speakers-page #header-section .top-header-section-container .content-container h1, #main-content.group-advisors-page #header-section .top-header-section-container .content-container h1, #main-content.schedule-page #header-section .top-header-section-container .content-container h1 {
         font-size: 2rem; }
         @media (max-width: 450px) {
-          #main-content.speakers-page #header-section .top-header-section-container .content-container h1, #main-content.group-advisors-page #header-section .top-header-section-container .content-container h1 {
+          #main-content.speakers-page #header-section .top-header-section-container .content-container h1, #main-content.group-advisors-page #header-section .top-header-section-container .content-container h1, #main-content.schedule-page #header-section .top-header-section-container .content-container h1 {
             font-size: 1.2rem; } }
-      #main-content.speakers-page #header-section .top-header-section-container .content-container #slogan, #main-content.group-advisors-page #header-section .top-header-section-container .content-container #slogan {
+      #main-content.speakers-page #header-section .top-header-section-container .content-container #slogan, #main-content.group-advisors-page #header-section .top-header-section-container .content-container #slogan, #main-content.schedule-page #header-section .top-header-section-container .content-container #slogan {
         display: block;
         font-weight: bold;
         margin-top: 2px; }
         @media (max-width: 450px) {
-          #main-content.speakers-page #header-section .top-header-section-container .content-container #slogan, #main-content.group-advisors-page #header-section .top-header-section-container .content-container #slogan {
+          #main-content.speakers-page #header-section .top-header-section-container .content-container #slogan, #main-content.group-advisors-page #header-section .top-header-section-container .content-container #slogan, #main-content.schedule-page #header-section .top-header-section-container .content-container #slogan {
             font-size: 13px; } }
 
-#main-content.speakers-page #speakers-section h1, #main-content.speakers-page #group-advisors-section h1, #main-content.speakers-page #schedule-section h1, #main-content.group-advisors-page #speakers-section h1, #main-content.group-advisors-page #group-advisors-section h1, #main-content.group-advisors-page #schedule-section h1 {
-  text-align: center;
-  color: #4f809b;
-  margin: 25px 0;
-  font-size: 2rem; }
-
-#main-content.speakers-page #speakers-section ul.people-list, #main-content.speakers-page #group-advisors-section ul.people-list, #main-content.speakers-page #schedule-section ul.people-list, #main-content.group-advisors-page #speakers-section ul.people-list, #main-content.group-advisors-page #group-advisors-section ul.people-list, #main-content.group-advisors-page #schedule-section ul.people-list {
+#main-content.speakers-page #speakers-section ul.people-list, #main-content.speakers-page #group-advisors-section ul.people-list, #main-content.group-advisors-page #speakers-section ul.people-list, #main-content.group-advisors-page #group-advisors-section ul.people-list, #main-content.schedule-page #speakers-section ul.people-list, #main-content.schedule-page #group-advisors-section ul.people-list {
   margin: 0;
   padding: 0;
   list-style: none;
   max-width: 80%;
   margin: auto; }
-  #main-content.speakers-page #speakers-section ul.people-list li.people-list-item, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item {
+  #main-content.speakers-page #speakers-section ul.people-list li.people-list-item, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item {
     background: #fff;
     box-shadow: 0 1px 3px #efe9dc;
     border-radius: 10px;
@@ -341,15 +346,15 @@ body {
     padding: 20px;
     position: relative; }
     @media (min-width: 800px) {
-      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item {
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item {
         margin: 0 0 50px;
         padding: 50px 50px 50px 100px;
         display: flex; } }
-    #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name {
+    #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image {
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image {
         position: relative;
         width: 150px;
         height: 150px;
@@ -358,48 +363,99 @@ body {
         box-shadow: 0 7px 14px rgba(41, 32, 16, 0.15);
         top: 0;
         left: 0; }
-        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma {
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma {
           background-image: url(../images/people/emma_yu.jpg);
           background-size: 150px auto; }
-        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent {
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent {
           background-image: url(../images/people/vincent_tseng.jpg);
           background-size: 275px auto;
           background-position-x: -64px; }
-        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan {
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan {
           background-image: url(../images/people/lemon.jpg);
           background-size: 150px auto; }
-        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan {
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan {
           background-image: url(../images/people/alan_chen.jpg);
           background-size: 225px auto;
           background-position-x: -27px; }
-        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred {
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred {
           background-image: url(../images/people/fred_yang.png);
           background-size: 165px auto;
           background-position-x: -5px; }
-        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa {
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa {
           background-image: url(../images/people/theresa_yang.jpg);
           background-size: 130px auto;
           background-position-x: 15px; }
-        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin {
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin {
           background-image: url(../images/people/kevin_lee.jpg);
           background-size: 135px auto;
           background-position-x: 15px; }
-        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily {
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily {
           background-image: url(../images/people/lily_kang_square.png);
           background-size: 164px auto;
           background-position-x: 0px; }
-      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3 {
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3 {
         text-align: center; }
     @media (min-width: 450px) {
-      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .profile-details, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .profile-details, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .profile-details, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .profile-details, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .profile-details, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .profile-details {
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .profile-details, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .profile-details, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .profile-details, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .profile-details, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .profile-details, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .profile-details {
         padding-left: 25px;
         display: flex;
         flex-direction: column; } }
-    #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .profile-details p, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .profile-details p, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .profile-details p, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .profile-details p, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .profile-details p, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .profile-details p {
+    #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .profile-details p, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .profile-details p, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .profile-details p, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .profile-details p, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .profile-details p, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .profile-details p {
       margin-bottom: 4px; }
-      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.speakers-page #schedule-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.group-advisors-page #schedule-section ul.people-list li.people-list-item .profile-details p span.label {
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .profile-details p span.label {
         font-weight: bold;
         font-size: 16px;
         color: #59af59; }
+
+#main-content.schedule-page #schedule-section #schedule-container {
+  display: flex;
+  justify-content: space-evenly; }
+  @media (max-width: 800px) {
+    #main-content.schedule-page #schedule-section #schedule-container {
+      flex-direction: column;
+      align-items: center; } }
+  #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container {
+    width: 300px; }
+    #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header .calendar-icon-container img {
+        height: 75px;
+        width: 75px; }
+      #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header .calendar-icon-container .day, #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header .calendar-icon-container .number {
+        height: 75px;
+        width: 75px; }
+      #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header .calendar-icon-container .day {
+        font-size: 17px;
+        bottom: -25px;
+        text-align: center; }
+      #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header .calendar-icon-container .number {
+        font-size: 22px;
+        bottom: -40px;
+        color: #7e7f78;
+        text-align: center; }
+      #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header .day-label {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 5px;
+        color: #83c583; }
+    #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list {
+      list-style: none; }
+      @media (min-width: 800px) {
+        #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list {
+          padding-left: 0;
+          padding: 15px; }
+          #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list.middle {
+            background-color: #fffdef; } }
+      #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list .schedule-item {
+        padding: 13px 0; }
+        #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list .schedule-item p {
+          margin-bottom: 5px; }
+        #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list .schedule-item .schedule-item-title {
+          font-weight: bold;
+          color: #444141; }
+          #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list .schedule-item .schedule-item-title.break {
+            color: #6a9ead; }
 
 /*# sourceMappingURL=index.css.map */
