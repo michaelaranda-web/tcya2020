@@ -336,6 +336,9 @@ body {
   list-style: none;
   max-width: 80%;
   margin: auto; }
+  @media (min-width: 1199px) {
+    #main-content.speakers-page #speakers-section ul.people-list, #main-content.speakers-page #group-advisors-section ul.people-list, #main-content.group-advisors-page #speakers-section ul.people-list, #main-content.group-advisors-page #group-advisors-section ul.people-list, #main-content.schedule-page #speakers-section ul.people-list, #main-content.schedule-page #group-advisors-section ul.people-list {
+      max-width: 65%; } }
   #main-content.speakers-page #speakers-section ul.people-list li.people-list-item, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item {
     background: #fff;
     box-shadow: 0 1px 3px #efe9dc;
@@ -454,7 +457,7 @@ body {
       #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list .schedule-item {
         padding: 13px 0; }
         #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list .schedule-item p {
-          margin-bottom: 5px; }
+          margin-bottom: 0; }
         #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list .schedule-item .schedule-item-title {
           font-weight: bold;
           color: #444141; }

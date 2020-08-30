@@ -476,6 +476,8 @@ body {
       max-width: 80%;
       margin: auto;
       
+      @media (min-width: $tablet-landscape-max) { max-width: 65%; }
+      
       li.people-list-item {
         @media (min-width: $tablet-portrait-min) { 
           margin: 0 0 50px;
@@ -652,7 +654,7 @@ body {
             padding: 13px 0;
             
             p {
-              margin-bottom: 5px;
+              margin-bottom: 0;
             }
             
             .schedule-item-title {
