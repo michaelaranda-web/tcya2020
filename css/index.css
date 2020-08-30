@@ -12,13 +12,16 @@ body {
   justify-content: center;
   align-items: center; }
 
-#main-content .navbar {
-  background-color: #4f809b !important; }
-  #main-content .navbar .navbar-brand {
-    color: white;
-    font-weight: bold; }
-  #main-content .navbar .navbar-nav .nav-item .nav-link {
-    color: white; }
+#main-content {
+  max-width: 1200px;
+  margin: 0 auto; }
+  #main-content .navbar {
+    background-color: #4f809b !important; }
+    #main-content .navbar .navbar-brand {
+      color: white;
+      font-weight: bold; }
+    #main-content .navbar .navbar-nav .nav-item .nav-link {
+      color: white; }
 
 #header-section {
   position: relative;
@@ -107,161 +110,161 @@ body {
         #header-section #cta-section #countdown {
           font-size: 26px; } }
 
-#main-content.home-page {
-  max-width: 1200px;
-  margin: 0 auto; }
-  #main-content.home-page .section-title {
-    background-color: #4f809b;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 9px 0; }
+#main-content.home-page .section-title {
+  background-color: #4f809b;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 9px 0; }
+  @media (min-width: 800px) {
+    #main-content.home-page .section-title {
+      font-size: 23px; } }
+
+#main-content.home-page #event-info-and-heart-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto; }
+  @media (min-width: 450px) {
+    #main-content.home-page #event-info-and-heart-section-container {
+      max-width: 900px; } }
+  @media (min-width: 800px) {
+    #main-content.home-page #event-info-and-heart-section-container {
+      flex-direction: row; } }
+  #main-content.home-page #event-info-and-heart-section-container #event-info-section {
+    padding: 10px 0;
+    width: 100%;
+    max-width: 350px; }
+    @media (max-width: 800px) {
+      #main-content.home-page #event-info-and-heart-section-container #event-info-section {
+        margin: auto; } }
     @media (min-width: 800px) {
-      #main-content.home-page .section-title {
-        font-size: 23px; } }
-  #main-content.home-page #event-info-and-heart-section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto; }
-    @media (min-width: 450px) {
-      #main-content.home-page #event-info-and-heart-section-container {
-        max-width: 900px; } }
-    @media (min-width: 800px) {
-      #main-content.home-page #event-info-and-heart-section-container {
-        flex-direction: row; } }
-    #main-content.home-page #event-info-and-heart-section-container #event-info-section {
-      padding: 10px 0;
-      width: 100%;
-      max-width: 350px; }
-      @media (max-width: 800px) {
-        #main-content.home-page #event-info-and-heart-section-container #event-info-section {
-          margin: auto; } }
-      @media (min-width: 800px) {
-        #main-content.home-page #event-info-and-heart-section-container #event-info-section {
-          width: 50%;
-          min-height: 350px;
-          padding: 10px 35px; } }
-      #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container {
+      #main-content.home-page #event-info-and-heart-section-container #event-info-section {
+        width: 50%;
+        min-height: 350px;
+        padding: 10px 35px; } }
+    #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 25px 0;
+      margin: auto; }
+      @supports (-ms-ime-align: auto) {
+        #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container {
+          justify-content: center; } }
+      #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        opacity: 0.4;
+        cursor: pointer;
+        margin: 0 5px;
+        padding-bottom: 5px;
+        border-bottom: 5px solid #eaeaea; }
+        @supports (-ms-ime-align: auto) {
+          #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector {
+            padding: 0 10px; } }
+        #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector .event-info-selector-icon {
+          max-width: 40px; }
+        #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector.selected {
+          opacity: 1;
+          font-weight: bold;
+          border-bottom: 5px solid #83c583; }
+    #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section {
+      padding: 25px 0px; }
+      @media (min-width: 450px) {
+        #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section {
+          max-width: 350px; } }
+      #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content {
+        text-align: left; }
+        @media (max-width: 450px) {
+          #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content {
+            padding: 0 25px; } }
+        #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content .label {
+          color: #8fc0d1; }
+    #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content {
+      text-align: center; }
+      #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item {
         display: flex;
         justify-content: space-evenly;
-        padding: 25px 0;
-        margin: auto; }
+        align-items: center; }
         @supports (-ms-ime-align: auto) {
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container {
+          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item {
             justify-content: center; } }
-        #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector {
+        #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container {
           position: relative;
-          display: flex;
-          flex-direction: column;
-          flex: 1;
-          align-items: center;
-          opacity: 0.4;
-          cursor: pointer;
-          margin: 0 5px;
-          padding-bottom: 5px;
-          border-bottom: 5px solid #eaeaea; }
-          @supports (-ms-ime-align: auto) {
-            #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector {
-              padding: 0 10px; } }
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector .event-info-selector-icon {
-            max-width: 40px; }
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #event-info-selectors-container .event-info-selector.selected {
-            opacity: 1;
+          padding: 0 10px; }
+          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container img {
+            height: 50px;
+            width: 50px; }
+          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day, #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
+            position: absolute;
             font-weight: bold;
-            border-bottom: 5px solid #83c583; }
-      #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section {
-        padding: 25px 0px; }
-        @media (min-width: 450px) {
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section {
-            max-width: 350px; } }
-        #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content {
-          text-align: left; }
-          @media (max-width: 450px) {
-            #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content {
-              padding: 0 25px; } }
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #general-info-section #general-info-section-content .label {
-            color: #8fc0d1; }
-      #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content {
-        text-align: center; }
-        #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item {
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center; }
-          @supports (-ms-ime-align: auto) {
-            #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item {
-              justify-content: center; } }
-          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container {
-            position: relative;
-            padding: 0 10px; }
-            #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container img {
-              height: 50px;
-              width: 50px; }
-            #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day, #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
-              position: absolute;
-              font-weight: bold;
-              height: 50px;
-              width: 50px; }
-            #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day {
-              font-size: 12px;
-              bottom: -15px; }
-            #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
-              font-size: 18px;
-              bottom: -25px;
-              color: #7e7f78; }
-    #main-content.home-page #event-info-and-heart-section-container #heart-section {
-      text-align: center;
-      padding: 40px 0; }
-      @media (min-width: 800px) {
-        #main-content.home-page #event-info-and-heart-section-container #heart-section {
-          align-self: center; } }
-      #main-content.home-page #event-info-and-heart-section-container #heart-section #heart-section-icon {
-        max-width: 175px; }
-        @media (min-width: 800px) {
-          #main-content.home-page #event-info-and-heart-section-container #heart-section #heart-section-icon {
-            max-width: 250px; } }
-  #main-content.home-page #faq-section .faq-section-content {
-    padding: 0 0 30px;
-    width: 100%;
-    max-width: 700px;
-    background: white;
-    margin: auto; }
+            height: 50px;
+            width: 50px; }
+          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .day {
+            font-size: 12px;
+            bottom: -15px; }
+          #main-content.home-page #event-info-and-heart-section-container #event-info-section #schedule-section #schedule-section-content .schedule-day-item .calendar-icon-container .number {
+            font-size: 18px;
+            bottom: -25px;
+            color: #7e7f78; }
+  #main-content.home-page #event-info-and-heart-section-container #heart-section {
+    text-align: center;
+    padding: 40px 0; }
     @media (min-width: 800px) {
-      #main-content.home-page #faq-section .faq-section-content {
-        padding: 30px 0 45px; } }
-    #main-content.home-page #faq-section .faq-section-content #accordion {
-      padding: 0 10px;
-      width: 75%; }
-      @media (max-width: 800px) {
-        #main-content.home-page #faq-section .faq-section-content #accordion {
-          max-width: 400px; } }
-      #main-content.home-page #faq-section .faq-section-content #accordion .ui-accordion-header {
-        margin: 15px 0 0 0;
-        border: 2px solid #b5dcb5;
-        border-radius: 3px;
-        color: #133649; }
-  #main-content.home-page #bottom-section {
-    background: url("../images/tzu_shao_conference_header.jpg") center no-repeat;
-    background-size: cover;
-    height: 288px;
-    position: relative; }
-    #main-content.home-page #bottom-section .content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%; }
-      #main-content.home-page #bottom-section .content span {
-        color: white;
-        font-weight: bold;
-        font-size: 6vw; }
-        @media (min-width: 450px) {
-          #main-content.home-page #bottom-section .content span {
-            font-size: 54px; } }
-    #main-content.home-page #bottom-section #flaticon-attribution {
-      font-size: 12px;
-      text-align: right;
-      padding: 20px 0;
-      opacity: 0.6; }
+      #main-content.home-page #event-info-and-heart-section-container #heart-section {
+        align-self: center; } }
+    #main-content.home-page #event-info-and-heart-section-container #heart-section #heart-section-icon {
+      max-width: 175px; }
+      @media (min-width: 800px) {
+        #main-content.home-page #event-info-and-heart-section-container #heart-section #heart-section-icon {
+          max-width: 250px; } }
+
+#main-content.home-page #faq-section .faq-section-content {
+  padding: 0 0 30px;
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  margin: auto; }
+  @media (min-width: 800px) {
+    #main-content.home-page #faq-section .faq-section-content {
+      padding: 30px 0 45px; } }
+  #main-content.home-page #faq-section .faq-section-content #accordion {
+    padding: 0 10px;
+    width: 75%; }
+    @media (max-width: 800px) {
+      #main-content.home-page #faq-section .faq-section-content #accordion {
+        max-width: 400px; } }
+    #main-content.home-page #faq-section .faq-section-content #accordion .ui-accordion-header {
+      margin: 15px 0 0 0;
+      border: 2px solid #b5dcb5;
+      border-radius: 3px;
+      color: #133649; }
+
+#main-content.home-page #bottom-section {
+  background: url("../images/tzu_shao_conference_header.jpg") center no-repeat;
+  background-size: cover;
+  height: 288px;
+  position: relative; }
+  #main-content.home-page #bottom-section .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; }
+    #main-content.home-page #bottom-section .content span {
+      color: white;
+      font-weight: bold;
+      font-size: 6vw; }
+      @media (min-width: 450px) {
+        #main-content.home-page #bottom-section .content span {
+          font-size: 54px; } }
+  #main-content.home-page #bottom-section #flaticon-attribution {
+    font-size: 12px;
+    text-align: right;
+    padding: 20px 0;
+    opacity: 0.6; }
 
 .ui-accordion-header {
   outline: none;
@@ -316,9 +319,87 @@ body {
           #main-content.speakers-page #header-section .top-header-section-container .content-container #slogan, #main-content.group-advisors-page #header-section .top-header-section-container .content-container #slogan {
             font-size: 13px; } }
 
-#main-content.speakers-page #speakers-section, #main-content.group-advisors-page #speakers-section {
+#main-content.speakers-page #speakers-section h1, #main-content.speakers-page #group-advisors-section h1, #main-content.group-advisors-page #speakers-section h1, #main-content.group-advisors-page #group-advisors-section h1 {
   text-align: center;
   color: #4f809b;
-  margin: 25px 0; }
+  margin: 25px 0;
+  font-size: 2rem; }
+
+#main-content.speakers-page #speakers-section ul.people-list, #main-content.speakers-page #group-advisors-section ul.people-list, #main-content.group-advisors-page #speakers-section ul.people-list, #main-content.group-advisors-page #group-advisors-section ul.people-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 80%;
+  margin: auto; }
+  #main-content.speakers-page #speakers-section ul.people-list li.people-list-item, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item {
+    background: #fff;
+    box-shadow: 0 1px 3px #efe9dc;
+    border-radius: 10px;
+    border-top: 10px solid #fff;
+    border-color: #83c583;
+    margin: 0 0 50px;
+    padding: 20px;
+    position: relative; }
+    @media (min-width: 800px) {
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item {
+        margin: 0 0 50px;
+        padding: 50px 50px 50px 100px;
+        display: flex; } }
+    #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 0 0 15px;
+        border-radius: 75px;
+        box-shadow: 0 7px 14px rgba(41, 32, 16, 0.15);
+        top: 0;
+        left: 0; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.emma {
+          background-image: url(../images/people/emma_yu.jpg);
+          background-size: 150px auto; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.vincent {
+          background-image: url(../images/people/vincent_tseng.jpg);
+          background-size: 275px auto;
+          background-position-x: -64px; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.liyan {
+          background-image: url(../images/people/lemon.jpg);
+          background-size: 150px auto; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.alan {
+          background-image: url(../images/people/alan_chen.jpg);
+          background-size: 225px auto;
+          background-position-x: -27px; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.fred {
+          background-image: url(../images/people/fred_yang.png);
+          background-size: 165px auto;
+          background-position-x: -5px; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.theresa {
+          background-image: url(../images/people/theresa_yang.jpg);
+          background-size: 130px auto;
+          background-position-x: 15px; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.kevin {
+          background-image: url(../images/people/kevin_lee.jpg);
+          background-size: 135px auto;
+          background-position-x: 15px; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.lily {
+          background-image: url(../images/people/lily_kang_square.png);
+          background-size: 164px auto;
+          background-position-x: 0px; }
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3 {
+        text-align: center; }
+    @media (min-width: 450px) {
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .profile-details, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .profile-details, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .profile-details, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .profile-details {
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column; } }
+    #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .profile-details p, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .profile-details p, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .profile-details p, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .profile-details p {
+      margin-bottom: 4px; }
+      #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .profile-details p span.label, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .profile-details p span.label {
+        font-weight: bold;
+        font-size: 20px;
+        color: #59af59; }
 
 /*# sourceMappingURL=index.css.map */
