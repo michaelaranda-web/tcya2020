@@ -24,6 +24,13 @@ body {
     @media (min-width: 800px) {
       #main-content .section-title {
         font-size: 23px; } }
+  #main-content .navbar {
+    background-color: #4f809b !important; }
+    #main-content .navbar .navbar-brand {
+      color: white;
+      font-weight: bold; }
+    #main-content .navbar .navbar-nav .nav-item .nav-link {
+      color: white; }
   #main-content #header-section {
     position: relative;
     margin: 10px;

@@ -45,6 +45,19 @@ body {
     padding: 9px 0;
   }
   
+  .navbar {
+    background-color: #4f809b !important;
+    
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+      color: white;
+    }
+  }
+  
   #header-section {
     position: relative;
     margin: 10px;
