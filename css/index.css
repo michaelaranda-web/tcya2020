@@ -438,8 +438,11 @@ body {
       #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header .day-label {
         font-size: 22px;
         font-weight: bold;
-        margin-top: 5px;
-        color: #83c583; }
+        margin-top: 15px;
+        color: white;
+        background: #83c583;
+        text-align: center;
+        width: 90%; }
     #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list {
       list-style: none; }
       @media (min-width: 800px) {
