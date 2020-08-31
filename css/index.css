@@ -404,6 +404,14 @@ body {
           background-image: url(../images/people/mark_liu.png);
           background-size: 229px auto;
           background-position-x: -13px; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.allan, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.allan, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.allan, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.allan, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.allan, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.allan {
+          background-image: url(../images/people/allan_tian.png);
+          background-size: 150px auto;
+          background-position-x: 1px; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.brian, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.brian, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.brian, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.brian, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.brian, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.brian {
+          background-image: url(../images/people/brian_nguyen_square.png);
+          background-size: 160px auto;
+          background-position-x: -5px; }
       #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3 {
         font-size: 1.5rem;
         text-align: center; }
