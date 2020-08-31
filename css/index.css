@@ -424,6 +424,9 @@ body {
       display: flex;
       align-items: center;
       flex-direction: column; }
+      @media (max-width: 800px) {
+        #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header {
+          padding-bottom: 10px; } }
       #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .day-header .calendar-icon-container img {
         height: 75px;
         width: 75px; }
@@ -448,10 +451,10 @@ body {
         text-align: center;
         width: 90%; }
     #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list {
-      list-style: none; }
+      list-style: none;
+      padding-left: 0; }
       @media (min-width: 800px) {
         #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list {
-          padding-left: 0;
           padding: 15px; }
           #main-content.schedule-page #schedule-section #schedule-container .schedule-day-list-container .schedule-day-list.middle {
             background-color: #fffdef; } }

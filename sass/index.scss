@@ -603,6 +603,10 @@ body {
           align-items: center;
           flex-direction: column;
           
+          @media (max-width: 800px) { 
+            padding-bottom: 10px;
+          }
+          
           .calendar-icon-container {
             img {
               height: 75px;
@@ -641,9 +645,9 @@ body {
         
         .schedule-day-list {
           list-style: none;
+          padding-left: 0;        
           
           @media (min-width: 800px) { 
-            padding-left: 0;          
             padding: 15px;
             
             &.middle {
