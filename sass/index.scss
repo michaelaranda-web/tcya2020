@@ -95,6 +95,16 @@ body {
   background-color: #f4fffe;
   z-index: 0;
   
+  #conference-update {
+    position: absolute;
+    top: 5px;
+    background-color: #ffefab;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+  }
+  
   .top-header-section-container {
     padding: 10px;
     
@@ -574,6 +584,8 @@ body {
 #main-content.speakers-page, #main-content.group-advisors-page, #main-content.schedule-page {
   #header-section {
     min-height: 150px;
+    
+    
     
     .top-header-section-container {
       display: flex;
