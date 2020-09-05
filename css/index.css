@@ -226,6 +226,99 @@ body {
         #main-content.home-page #event-info-and-heart-section-container #heart-section #heart-section-icon {
           max-width: 250px; } }
 
+#main-content.home-page #panelists-section #panelists-section-description {
+  max-width: 80%;
+  padding: 25px 35px;
+  margin: 0 auto;
+  background-color: #fffad0;
+  margin: 40px auto;
+  font-size: 13px; }
+  @media (min-width: 800px) {
+    #main-content.home-page #panelists-section #panelists-section-description {
+      max-width: 50%;
+      padding: 25px 50px;
+      font-size: 14px; } }
+  #main-content.home-page #panelists-section #panelists-section-description p {
+    color: #5f5959;
+    font-weight: bold; }
+
+#main-content.home-page #panelists-section #panelists-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 80%;
+  margin: auto; }
+  @media (min-width: 1199px) {
+    #main-content.home-page #panelists-section #panelists-list {
+      max-width: 65%; } }
+  #main-content.home-page #panelists-section #panelists-list li.panelists-list-item {
+    background: #fff;
+    box-shadow: 0 1px 3px #efe9dc;
+    border-radius: 10px;
+    border-top: 10px solid #fff;
+    border-color: #83c583;
+    margin: 0 0 50px;
+    padding: 20px;
+    position: relative; }
+    @media (min-width: 800px) {
+      #main-content.home-page #panelists-section #panelists-list li.panelists-list-item {
+        margin: 0 0 50px;
+        padding: 50px 75px;
+        display: flex; } }
+    #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .people-list-item-pic-and-name {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .people-list-item-pic-and-name .profile-image {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 0 0 15px;
+        border-radius: 75px;
+        box-shadow: 0 7px 14px rgba(41, 32, 16, 0.15);
+        top: 0;
+        left: 0; }
+        #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .people-list-item-pic-and-name .profile-image.debra-boudreaux {
+          background-image: url(../images/people/debra_boudreaux.jpg);
+          background-size: 154px auto;
+          background-position-x: -2px; }
+        #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .people-list-item-pic-and-name .profile-image.joanna-zhang {
+          background-image: url(../images/people/joanna_zhang.jpg);
+          background-size: 142px auto; }
+        #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .people-list-item-pic-and-name .profile-image.rosleny-ubinas {
+          background-image: url(../images/people/rosleny_ubinas.jpg);
+          background-size: 126px auto;
+          background-position-x: 13px; }
+        #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .people-list-item-pic-and-name .profile-image.jimmy-yang {
+          background-image: url(../images/people/jimmy_yang.jpg);
+          background-size: 166px auto;
+          background-position-x: -22px;
+          background-position-y: -60px; }
+        #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .people-list-item-pic-and-name .profile-image.steve-chiu {
+          background-image: url(../images/people/steve_chiu.jpg);
+          background-size: 154px auto;
+          background-position-x: -2px; }
+      #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .people-list-item-pic-and-name h3 {
+        font-size: 1.5rem;
+        text-align: center; }
+    @media (min-width: 450px) {
+      #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .profile-details {
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column; } }
+    #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .profile-details p {
+      margin-bottom: 4px; }
+      #main-content.home-page #panelists-section #panelists-list li.panelists-list-item .profile-details p span.label {
+        font-weight: bold;
+        font-size: 16px;
+        color: #59af59; }
+    #main-content.home-page #panelists-section #panelists-list li.panelists-list-item.reverse-order {
+      flex-direction: row-reverse; }
+      @media (min-width: 450px) {
+        #main-content.home-page #panelists-section #panelists-list li.panelists-list-item.reverse-order .profile-details {
+          padding-right: 25px;
+          padding-left: 0px; } }
+
 #main-content.home-page #faq-section .faq-section-content {
   padding: 0 0 30px;
   width: 100%;
