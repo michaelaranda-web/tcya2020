@@ -418,6 +418,10 @@ body {
           background-size: 156px auto;
           background-position-x: 1px;
           background-position-y: -30px; }
+        #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.steve-chiu, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.steve-chiu, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.steve-chiu, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.steve-chiu, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.steve-chiu, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name .profile-image.steve-chiu {
+          background-image: url(../images/people/steve_chiu.jpg);
+          background-size: 154px auto;
+          background-position-x: -2px; }
       #main-content.speakers-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.speakers-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.group-advisors-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.schedule-page #speakers-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3, #main-content.schedule-page #group-advisors-section ul.people-list li.people-list-item .people-list-item-pic-and-name h3 {
         font-size: 1.5rem;
         text-align: center; }
