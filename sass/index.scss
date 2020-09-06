@@ -216,6 +216,55 @@ body {
   }
 }
 
+#team-scores-section {
+  h1 {
+    text-align: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    
+    &.column {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  
+  #point-input-container {
+    padding: 20px;
+  }
+  
+  #team-list-container {
+    padding: 20px;
+    max-height: 250px;
+    
+    .team-list-item {
+      padding: 0 20px 5px 0;
+    }
+  }
+  
+  #team-scores-list {
+    padding: 20px;
+    
+    .team-score-item {
+      display: inline-block;
+      max-width: 80px;
+      text-align: center;
+      padding: 0 10px;
+      
+      .team-name {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      
+      .current-score {
+        font-size: 20px;
+        color: green;
+      }
+    }
+  }
+}
+
 #main-content.home-page {
   .section-title {
     background-color: #4f809b;
