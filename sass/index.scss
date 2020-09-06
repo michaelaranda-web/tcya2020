@@ -95,9 +95,14 @@ body {
   background-color: #f4fffe;
   z-index: 0;
   
+  @media (max-width: $mobile-max) { 
+    padding-bottom: 45px;
+  }
+  
   #conference-update {
     position: absolute;
     top: 5px;
+    @media (max-width: $mobile-max) { top: unset; bottom: 5px; }
     background-color: #ffefab;
     display: block;
     text-align: center;

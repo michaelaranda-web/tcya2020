@@ -55,6 +55,9 @@ body {
   overflow: hidden;
   background-color: #f4fffe;
   z-index: 0; }
+  @media (max-width: 450px) {
+    #header-section {
+      padding-bottom: 45px; } }
   #header-section #conference-update {
     position: absolute;
     top: 5px;
@@ -63,6 +66,10 @@ body {
     text-align: center;
     width: 100%;
     padding: 5px 0; }
+    @media (max-width: 450px) {
+      #header-section #conference-update {
+        top: unset;
+        bottom: 5px; } }
   #header-section .top-header-section-container {
     padding: 10px; }
     #header-section .top-header-section-container .image-container {
